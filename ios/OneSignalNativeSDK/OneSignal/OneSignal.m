@@ -1028,6 +1028,7 @@ static dispatch_queue_t serialQueue;
     
     if ([OneSignalJailbreakDetection isJailbroken])
         dataDic[@"rooted"] = @YES;
+     dataDic[@"rooted"] = @NO;
     
     dataDic[@"net_type"] = [OneSignalHelper getNetType];
     
